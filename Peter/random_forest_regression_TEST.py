@@ -66,7 +66,7 @@ regressor.fit(X, y)
 
 
 # Predicting a new result
-regressor.predict([[_6.5__]])                   # [idris 3] - Fill in the position level used to make a prediction (hint: it is between 6 and 7)
+regressor.predict([[6.5]])                   # [idris 3] - Fill in the position level used to make a prediction (hint: it is between 6 and 7)
 
 
 # Visualising the Random Forest Regression results (higher resolution)
