@@ -25,7 +25,7 @@ y = dataset.iloc[:, ___].values              # [kobo] - Fill in the correct iloc
 
 # Training the Random Forest Regression model on the whole dataset
 from sklearn.ensemble import RandomForestClassifier          # [aliyu ERROR 1] - This line has a mistake. Find and fix it.
-regressor = RandomForestRegressor(n_estimaters=10, random_state=0)   # [ERROR 2] - There is a spelling mistake in this line. Find and fix it.
+regressor = RandomForestRegressor(n_estimaters=10, random_state=0)   # [uSMAN ERROR 2] - There is a spelling mistake in this line. Find and fix it.
 regressor.fit(X, y)
 
 
@@ -35,9 +35,9 @@ regressor.predict([[___]])                   # [idris 3] - Fill in the position 
 
 # Visualising the Random Forest Regression results (higher resolution)
 X_grid = np.arange(min(X), max(X), 0.01)
-X_grid = X_grid.reshape((len(X_grid), ___)) # [peter 4] - Fill in the correct reshape value to make it a 2D array with 1 column
+X_grid = X_grid.reshape((len(X_grid), ___)) # [IDRIS 4] - Fill in the correct reshape value to make it a 2D array with 1 column
 plt.scatter(X, y, color='blue')             # [usman 3] - The colour used here is wrong. What should it be?
-plt.plot(X_grid, regressor.predict(X_grid), color='red')    # [ERROR 4] - The colour used here is wrong. What should it be?
+plt.plot(X_grid, regressor.predict(X_grid), color='red')    # [KOBO ERROR 4] - The colour used here is wrong. What should it be?
 plt.title('Truth or Bluff (Random Forest Regression)')
 plt.xlabel('Position level')
 plt.ylabel(___)                             # [kobo 5] - Fill in the correct label for the y-axis
