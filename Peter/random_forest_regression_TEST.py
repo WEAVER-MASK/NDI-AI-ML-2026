@@ -15,6 +15,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd                          # [usman] - What library is imported here and why?
+                                 # This librabry is mainly for data that includes table and values
 
 
 # Importing the dataset
