@@ -21,7 +21,7 @@ import pandas as pd                          # [usman] - What library is importe
 # Importing the dataset
 dataset = pd.read_csv('Position_Salaries.csv')
 X = dataset.iloc[:, 1:-1].values
-y = dataset.iloc[:, ___].values              # [kobo] - Fill in the correct iloc index to select the last column
+y = dataset.iloc[:, -1].values              # [kobo] - Fill in the correct iloc index to select the last column
 
 
 # Training the Random Forest Regression model on the whole dataset
