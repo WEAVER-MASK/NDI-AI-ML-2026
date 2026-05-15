@@ -88,9 +88,7 @@ plt.show()
 #    Random Forest model, and what effect does increasing
 #    it have on the model?
 #
-# Answer: ___________________________________________________
-#         ___________________________________________________
-#         ___________________________________________________
+# Answer:parameter in a Random Forest model controls the number of trees in the forest. Each tree is built from a bootstrap sample of the training data.
 # ============================================================                   # [idris 3] - Fill in the position level used to make a prediction (hint: it is between 6 and 7)
 
 
