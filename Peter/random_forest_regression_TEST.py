@@ -39,7 +39,7 @@ import pandas as pd                          # [usman] - What library is importe
 # Importing the dataset
 dataset = pd.read_csv('Position_Salaries.csv')
 X = dataset.iloc[:, 1:-1].values
-y = dataset.iloc[:, ___].values              # [kobo] - Fill in the correct iloc index to select the last column
+y = dataset.iloc[:, -1].values              # [kobo] - Fill in the correct iloc index to select the last column
 
 
 # Training the Random Forest Regression model on the whole dataset
@@ -57,7 +57,7 @@ import pandas as pd                          # [usman] - What library is importe
 # Importing the dataset
 dataset = pd.read_csv('Position_Salaries.csv')
 X = dataset.iloc[:, 1:-1].values
-y = dataset.iloc[:, ___].values              # [kobo] - Fill in the correct iloc index to select the last column
+y = dataset.iloc[:, -1].values              # [kobo] - Fill in the correct iloc index to select the last column
 
 
 # Training the Random Forest Regression model on the whole dataset
@@ -77,7 +77,7 @@ plt.scatter(X, y, color='blue')             # [usman 3] - The colour used here i
 plt.plot(X_grid, regressor.predict(X_grid), color='red')    # [ERROR 4] - The colour used here is wrong. What should it be?
 plt.title('Truth or Bluff (Random Forest Regression)')
 plt.xlabel('Position level')
-plt.ylabel(___)                             # [kobo 5] - Fill in the correct label for the y-axis
+plt.ylabel('Salary')                             # [kobo 5] - Fill in the correct label for the y-axis
 plt.show()
 
 
@@ -99,7 +99,7 @@ plt.scatter(X, y, color='blue')             # [usman 3] - The colour used here i
 plt.plot(X_grid, regressor.predict(X_grid), color='red')    # [ERROR 4] - The colour used here is wrong. What should it be?
 plt.title('Truth or Bluff (Random Forest Regression)')
 plt.xlabel('Position level')
-plt.ylabel(___)                             # [kobo 5] - Fill in the correct label for the y-axis
+plt.ylabel('Salary')                             # [kobo 5] - Fill in the correct label for the y-axis
 plt.show()
 
 
@@ -123,7 +123,7 @@ plt.scatter(X, y, color='blue')             # [usman 3] - The colour used here i
 plt.plot(X_grid, regressor.predict(X_grid), color='red')    # [KOBO ERROR 4] - The colour used here is wrong. What should it be?
 plt.title('Truth or Bluff (Random Forest Regression)')
 plt.xlabel('Position level')
-plt.ylabel(___)                             # [kobo 5] - Fill in the correct label for the y-axis
+plt.ylabel('Salary')                             # [kobo 5] - Fill in the correct label for the y-axis
 plt.show()
 
 
